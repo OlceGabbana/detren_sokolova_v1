@@ -15,7 +15,8 @@ namespace detren_sokolova_v1
     
     public partial class de41_sokolova_v1_eduEntities1 : DbContext
     {
-        public static de41_sokolova_v1_eduEntities1 _context;
+
+        private static de41_sokolova_v1_eduEntities1 _context;
         public de41_sokolova_v1_eduEntities1()
             : base("name=de41_sokolova_v1_eduEntities1")
         {
@@ -28,6 +29,7 @@ namespace detren_sokolova_v1
             return _context;
         }
     
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

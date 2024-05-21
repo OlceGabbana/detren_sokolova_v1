@@ -21,6 +21,7 @@ namespace detren_sokolova_v1
     public partial class AddEditEmployee : Page
     {
         private employee _currentEmployee = new employee();
+
         public AddEditEmployee()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace detren_sokolova_v1
                 MessageBox.Show(errors.ToString());
                 return;
             }
-            if (_currentEmployee.id == 0)
+            if (errors.Length == 0)
                 de41_sokolova_v1_eduEntities1.GetContext().employee.Add(_currentEmployee);
 
             try
