@@ -22,9 +22,11 @@ namespace detren_sokolova_v1
     {
         private employee _currentEmployee = new employee();
 
-        public AddEditEmployee()
+        public AddEditEmployee( employee selectedEmployee)
         {
             InitializeComponent();
+            if (selectedEmployee != null)
+                _currentEmployee = selectedEmployee;
             DataContext = _currentEmployee;
         }
 

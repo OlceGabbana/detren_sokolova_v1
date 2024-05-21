@@ -29,7 +29,7 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Style="{StaticResource Button}" HorizontalAlignment="Left" Grid.Row="1">Уволить сотрудника</Button>
+        <Button Style="{StaticResource Button}" HorizontalAlignment="Left" Grid.Row="1" Click="BtnDel_Click">Уволить сотрудника</Button>
         <Button Style="{StaticResource Button}" HorizontalAlignment="Right" Grid.Row="1" Click="BtnAdd_Click">Добавить сотрудника</Button>
 
         

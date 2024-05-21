@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace detren_sokolova_v1
 {
     /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
+    /// Логика взаимодействия для InDev.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class InDev : Page
     {
-        public MainPage()
+        public InDev()
         {
             InitializeComponent();
-        }
-
-        private void employee_click(object sender, RoutedEventArgs e)
-        {
-            ManagerClick.MainFrame.Navigate(new EmployeesPage());
-        }
-
-        private void inDev_Click(object sender, RoutedEventArgs e)
-        {
-            ManagerClick.MainFrame.Navigate(new InDev());
         }
     }
 }

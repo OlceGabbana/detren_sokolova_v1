@@ -29,3 +29,5 @@ D:\de\detren_sokolova_v1\obj\Debug\EmployeesPage.baml
 D:\de\detren_sokolova_v1\obj\Debug\detren_sokolova_v1.csproj.CopyComplete
 D:\de\detren_sokolova_v1\obj\Debug\AddEditEmployee.g.cs
 D:\de\detren_sokolova_v1\obj\Debug\AddEditEmployee.baml
+D:\de\detren_sokolova_v1\obj\Debug\InDev.g.cs
+D:\de\detren_sokolova_v1\obj\Debug\InDev.baml

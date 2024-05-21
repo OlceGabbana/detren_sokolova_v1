@@ -11,8 +11,8 @@
     <Grid>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="200">
             <Button Style="{StaticResource Button}" Click="employee_click">Сотрудники</Button>
-            <Button Style="{StaticResource Button}">Заказы</Button>
-            <Button Style="{StaticResource Button}">Смены</Button>
+            <Button Style="{StaticResource Button}" Click="inDev_Click">Заказы</Button>
+            <Button Style="{StaticResource Button}" Click="inDev_Click">Смены</Button>
         </StackPanel>
         
     </Grid>
