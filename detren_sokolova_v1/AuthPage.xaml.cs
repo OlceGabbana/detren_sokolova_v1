@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace detren_sokolova_v1
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AuthPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AuthPage : Page
     {
-        public MainWindow()
+        public AuthPage()
         {
             InitializeComponent();
-            MainFrame.Navigate(new AuthPage());
         }
     }
 }

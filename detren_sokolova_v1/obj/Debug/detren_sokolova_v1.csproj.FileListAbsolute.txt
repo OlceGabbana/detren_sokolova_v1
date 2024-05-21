@@ -13,3 +13,6 @@ D:\de\detren_sokolova_v1\obj\Debug\detren_sokolova_v1.csproj.GenerateResource.ca
 D:\de\detren_sokolova_v1\obj\Debug\detren_sokolova_v1.csproj.CoreCompileInputs.cache
 D:\de\detren_sokolova_v1\obj\Debug\detren_sokolova_v1.exe
 D:\de\detren_sokolova_v1\obj\Debug\detren_sokolova_v1.pdb
+D:\de\detren_sokolova_v1\obj\Debug\AuthPage.g.cs
+D:\de\detren_sokolova_v1\obj\Debug\App.baml
+D:\de\detren_sokolova_v1\obj\Debug\AuthPage.baml
