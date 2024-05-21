@@ -23,6 +23,7 @@ namespace detren_sokolova_v1
         public EmployeesPage()
         {
             InitializeComponent();
+
             DGridEmployees.ItemsSource = de41_sokolova_v1_eduEntities1.GetContext().employee.ToList();
         }
 
@@ -34,6 +35,14 @@ namespace detren_sokolova_v1
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
             ManagerClick.MainFrame.Navigate(new AddEditEmployee());
+        }
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                de41_sokolova_v1_eduEntities1.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGridEmployees.ItemsSource = de41_sokolova_v1_eduEntities1.GetContext().employee.ToList();
+            }
         }
     }
 }

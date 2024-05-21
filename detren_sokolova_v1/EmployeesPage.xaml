@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:detren_sokolova_v1"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="EmployeesPage">
+      Title="EmployeesPage" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.RowDefinitions>

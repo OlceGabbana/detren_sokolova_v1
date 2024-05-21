@@ -34,15 +34,15 @@
         <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="6">Email</TextBlock>
         <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="7">Возраст</TextBlock>
         <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="8">Роль</TextBlock>
-        <TextBox Grid.Column="1"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="1"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="2"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="3"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="4"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="5"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="6"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="7"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="8"></TextBox>
+        <TextBox Grid.Column="1" Text="{Binding surname}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding name}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding patronimyc}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding login}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding password}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="5" Text="{Binding phone}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="6" Text="{Binding email}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="7" Text="{Binding age}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="8" Text="{Binding role}"></TextBox>
         <Button Style="{StaticResource Button}" Grid.Column="1" Grid.Row="9" Name="BtnSave" Click="BtnSave_Click">Сохранить</Button>
     </Grid>
 </Page>

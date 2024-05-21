@@ -20,14 +20,39 @@ namespace detren_sokolova_v1
     /// </summary>
     public partial class AddEditEmployee : Page
     {
+        private employee _currentEmployee = new employee();
         public AddEditEmployee()
         {
             InitializeComponent();
+            DataContext = _currentEmployee;
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
+            StringBuilder errors = new StringBuilder();
 
+            if ((string.IsNullOrWhiteSpace(_currentEmployee.surname)) && (string.IsNullOrWhiteSpace(_currentEmployee.name)) && (string.IsNullOrWhiteSpace(_currentEmployee.patronimyc)) && (string.IsNullOrWhiteSpace(_currentEmployee.role)))
+                errors.AppendLine("Заполните поля");
+            
+            if (errors.Length > 0)
+            {
+                MessageBox.Show(errors.ToString());
+                return;
+            }
+            if (_currentEmployee.id == 0)
+                de41_sokolova_v1_eduEntities1.GetContext().employee.Add(_currentEmployee);
+
+            try
+            {
+                de41_sokolova_v1_eduEntities1.GetContext().SaveChanges();
+                MessageBox.Show("Информация сохранена!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
+
+       
     }
 }
