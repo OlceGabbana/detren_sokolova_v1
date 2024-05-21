@@ -14,7 +14,7 @@
             <TextBox Style="{StaticResource TextBox}"/>
             <TextBlock Style="{StaticResource TextBlock}">Введите пароль</TextBlock>
             <TextBox Style="{StaticResource TextBox}"/>
-            <Button Style="{StaticResource Button}">Войти</Button>
+            <Button Style="{StaticResource Button}" Click="Button_Click">Войти</Button>
         </StackPanel>
         
     </Grid>

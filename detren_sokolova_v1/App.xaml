@@ -13,11 +13,22 @@
             <Setter Property="Margin" Value="10"/>
             <Setter Property="FontSize" Value="15"/>
         </Style>
+        <Style TargetType="TextBlock" x:Key="TextBlockMini">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Padding" Value="10"/>
+        </Style>
         <Style TargetType="Button" x:Key="Button">
             <Setter Property="Padding" Value="10"/>
             <Setter Property="Margin" Value="10"/>
-            <Setter Property="Background" Value="DarkRed"/>
+            <Setter Property="Background" Value="#DA6A00"/>
             <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+        <Style TargetType="Button" x:Key="ButtonMainPage">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
             <Setter Property="FontSize" Value="15"/>
         </Style>
     </Application.Resources>

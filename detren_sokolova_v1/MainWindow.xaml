@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:detren_sokolova_v1"
         mc:Ignorable="d"
-        Title="Кафе" Height="500" Width="800">
+        Title="Кафе" Height="600" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="89"/>
@@ -15,6 +15,7 @@
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="White">Кафе</TextBlock>
         <Grid Background="DarkRed" Panel.ZIndex="-2"/>
         <Grid Grid.Row="2" Background="IndianRed"/>
-        <Frame Grid.Row="1" Name="MainFrame"/>
+        <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"/>
+        <Button Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right" Style="{StaticResource ButtonMainPage}" Click="BtnBack_Click" Name="BtnBack">Назад</Button>
     </Grid>
 </Window>

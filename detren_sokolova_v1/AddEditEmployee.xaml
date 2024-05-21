@@ -1,0 +1,48 @@
+﻿<Page x:Class="detren_sokolova_v1.AddEditEmployee"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:detren_sokolova_v1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditEmployee">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Style="{StaticResource TextBlockMini}">Фамилия</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="1">Имя</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="2">Отчество</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="3">Логин</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="4">Пароль</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="5">Телефон</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="6">Email</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="7">Возраст</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockMini}" Grid.Row="8">Роль</TextBlock>
+        <TextBox Grid.Column="1"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="1"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="2"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="3"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="4"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="5"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="6"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="7"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="8"></TextBox>
+        <Button Style="{StaticResource Button}" Grid.Column="1" Grid.Row="9" Name="BtnSave" Click="BtnSave_Click">Сохранить</Button>
+    </Grid>
+</Page>

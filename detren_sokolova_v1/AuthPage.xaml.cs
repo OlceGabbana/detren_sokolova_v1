@@ -24,5 +24,10 @@ namespace detren_sokolova_v1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerClick.MainFrame.Navigate(new MainPage());
+        }
     }
 }

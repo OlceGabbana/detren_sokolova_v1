@@ -24,6 +24,24 @@ namespace detren_sokolova_v1
         {
             InitializeComponent();
             MainFrame.Navigate(new AuthPage());
+            ManagerClick.MainFrame = MainFrame;
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerClick.MainFrame.GoBack();
+        }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+            {
+                BtnBack.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                BtnBack.Visibility = Visibility.Hidden;
+            }
         }
     }
 }
